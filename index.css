@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+  }
+
+body{
+    background-image: url("img/mountains.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.keyboard-input-wrapper{
+    width: 50%;
+    height: 200px;
+    display: block;
+    margin: 50px auto;
+}
+
+.keyboard-input{
+    background:rgb(46, 46, 46);
+    border: 20px solid rgba(0,0,0,.1);
+    color:#ffffff;
+    font-size: 18px;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+.keyboard-row-ukr, .keyboard-row {
+    text-align: center;
+    padding-bottom: 2px;
+}
+
+.keyboard {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 5px 0;
+    background-color: #ececec;
+    height: 50%;
+}
+.keyboard-item.ukr {
+   display: none;
+}
+
+.keyboard-item {
+    height: 45px;
+    width: 6%;
+    max-width: 90px;
+    margin: 3px;
+    border-radius: 4px;
+    border: none;
+    background:#FFFFFF;
+    color: #000000;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: top;
+    padding: 0;
+    font-family: arial!important;
+    position: relative;
+}
+
+.active {
+    background: #e4e4e4;
+    box-shadow: 0 2px #adb5bb;
+    transform: translateY(2px);
+}
+.smile {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 50px!important;
+    padding: 20px;
+    cursor: pointer;
+    transition: .5s color;
+}
+.smile:hover{
+    color: #e4e4e4;
+}
+.close {
+    position: absolute;
+    font-size: 30px;
+    color: black;
+    left: -25px;
+    cursor: pointer;
+    top: 0;
+}
+.close:hover{
+    color: #e4e4e4;
+}
+.instructions {
+    width: 250px;
+    height: 50px;
+    position: absolute;
+    top: 20px;
+    right: 70px;
+    font-size: 20px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    color: #e4e4e4;
+}
+.caps-lock{
+    text-transform: capitalize;
+}
+.space-extra-wide {
+    width: 45%;
+    max-width: 670px;
+}
